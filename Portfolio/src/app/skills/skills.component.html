@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="container">
+        <div class="skill-box" *ngFor="let objSkill of skillList">
+            <span class="title">{{objSkill.skill}}</span>
+
+            <div class="skill-bar">
+                <span class="skill-per {{objSkill.skill}}" [ngStyle]="{width: objSkill.level}">
+                    <span class="tooltip">{{objSkill.level}}</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>

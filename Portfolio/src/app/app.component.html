@@ -1,0 +1,30 @@
+<div class="snowHo">
+  <app-snow></app-snow>
+</div>
+<div class="main">
+  <div class="left-pane">
+    <app-navigation-bar (navigateTo)="onNavigate($event)"></app-navigation-bar>
+  </div>
+  <div class="right-pane">
+    <ng-container *ngIf="ActiveComponent.toLowerCase().replace(' ','') === 'home'; then home"></ng-container>
+    <ng-container *ngIf="ActiveComponent.toLowerCase().replace(' ','') === 'profilesummary'; then profilesummary"></ng-container>
+    <ng-container *ngIf="ActiveComponent.toLowerCase().replace(' ','') === 'workexperience'; then workexperience"></ng-container>
+    <ng-container *ngIf="ActiveComponent.toLowerCase().replace(' ','') === 'skills'; then skills"></ng-container>
+    <ng-container *ngIf="ActiveComponent.toLowerCase().replace(' ','') === 'contact'; then contact"></ng-container>
+  </div>
+</div>
+<ng-template #home>
+<app-dashboard></app-dashboard>
+</ng-template>
+<ng-template #profilesummary>
+  <app-summary></app-summary>
+</ng-template>
+<ng-template #workexperience>
+  <app-experience></app-experience>
+</ng-template>
+<ng-template #skills>
+  <app-skills></app-skills>
+</ng-template>
+<ng-template #contact>
+  <app-contact></app-contact>
+</ng-template>

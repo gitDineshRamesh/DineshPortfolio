@@ -1,0 +1,113 @@
+.nav-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+  
+  .nav-main .profile-pic {
+    display: flex;
+    place-self: center;
+    /* place-content: center; Make the profile-pic a flex container */
+    align-items: center;
+    justify-content: center; 
+    width: 50%; /* Adjust image width as needed */
+    flex:1; /* Adjust image height as needed */
+     border-radius: 50%; 
+    overflow: hidden;
+  }
+  
+  .nav-main .profile-pic .profPic {
+    width: 100%; /* Image fills the profile-pic container */
+    height: 100%; /* Image fills the profile-pic container */
+    object-fit: contain ; /* Crop image to fit the container while maintaining aspect ratio */
+    border-radius: inherit; /* Inherit border-radius from profile-pic */
+  }
+  
+  .nav-main .hrul {
+    flex:0.5;
+    border: 2px solid var(--secondary); /* Adjusted border style for clarity */
+  }
+
+  .nav-main .menu-iems{
+    flex: 2.5;
+  }
+  .nav-main .menu-iems .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 10;
+    flex-wrap: wrap;
+  }
+  
+  .li {
+    --color: rgba(255, 255, 255, 0.685);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--color);
+    font-family: var(--fontfamh);
+    font-weight: bolder;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between; 
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .arrow {
+    display: inline-flex;
+    position: relative;
+    width: 1px;
+    height: 1px;
+    margin-left: 0.5rem;
+  }
+  
+  
+  
+  .li:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .li:hover .arrow {
+    transform: translateX(10px);
+  }
+  
+  .li:hover .text {
+    transform: translateX(10px);
+  }
+  
+  .li:hover .arrow::after {
+    width: 25px;
+    border-color: white;
+  }
+  
+  
+  .li,
+  .text,
+  .arrow,
+  .arrow::after,
+  .arrow::before,
+  .li::before,
+  .li::after {
+    transition: all 0.3s, box-shadow 0.2s;
+  }
+  
+
+  .li:active {
+    box-shadow: 0px 0px 0px 7px rgba(79, 78, 105, 0.295);
+  }
+
+  .active{
+    background-color: var(--primary);
+    color: white;
+  }
+  .colexp {
+    position: fixed;
+    left: 80%;
+  }
+  
+
+  
+  

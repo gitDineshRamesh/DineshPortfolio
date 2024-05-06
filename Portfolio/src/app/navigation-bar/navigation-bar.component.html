@@ -1,0 +1,38 @@
+<!-- <div class="colexp" (click)="toggleNavigation()">
+    <span class="material-symbols-outlined">
+        menu
+        </span>
+</div> -->
+<div class="nav-main" #navMain>
+    <div class="profile-pic">
+        <img class="profPic" src="../../assets/imgs/me.jpg"/>
+    </div>
+    <div class="hrul"></div>
+    <div class="menu-iems">
+        <div class="ul" (click)="changeActive($event)">
+            <div class="li {{initial}}" >
+                <span class="text">Home</span>
+                
+            </div>
+            <div class="li" >
+                <span class="text">Profile Summary</span>
+                
+                
+            </div>
+            <div class="li" >
+                <span class="text">Work Experience</span>
+                
+                
+            </div>
+            <div class="li" >
+                <span class="text">Skills</span>
+                
+                
+            </div>
+            <div class="li" >
+                <span class="text">Contact</span>
+                
+            </div>
+        </div>
+    </div>
+</div>

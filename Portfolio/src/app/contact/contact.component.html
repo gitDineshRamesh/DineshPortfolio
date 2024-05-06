@@ -1,0 +1,28 @@
+<div class="contMain">
+    <section class="container">
+        <div class="card-container">
+            <div class="card-content">
+                <div class="card-title">
+                    <span class="title">Contact</span>
+                </div>
+                <div class="card-body" (click)="showLink($event)">
+                    <div class="svg-card linkclass" data-link="dineshrameshhere@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="svg-card linkclass" data-link="+91 8072081284">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="svg-card linkclass" data-link="https://www.linkedin.com/in/dinesh-ramesh-3769a3194/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="svg-card linkclass" data-link="https://github.com/gitDineshRamesh">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="ftitle">{{selectedLink}}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

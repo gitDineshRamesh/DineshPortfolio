@@ -1,0 +1,94 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.shine {
+    flex: 1;
+    padding: 2dvi;
+    font-family: var(--fontfamh);
+    font-size: 5dvw;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.404);
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #fff)
+      ) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(
+      -40deg,
+      transparent 0%,
+      transparent 40%,
+      #fff 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-background-size: 50px;
+    -webkit-animation: zezzz;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes zezzz {
+    0%,
+    10% {
+      background-position: -20vmin;
+    }
+    20% {
+      background-position: top left;
+    }
+    100% {
+      background-position: 100vmin;
+    }
+  }
+  
+  /* .coderPlate {
+    width: 20dvw;
+    height: 50dvh;
+    padding-left: -40px;
+  } */
+  
+  
+  .content__container__text {
+    font-family: var(--fontfamp);
+    display: inline;
+    font-size: 2vmax;
+    font-weight: 900;
+    margin: 2em 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40) infinite;
+  }
+  
+ 
+  
+  @keyframes opacity {
+    0%, 100% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes typing {
+    0%,100% {
+      opacity: 100;
+    }
+    50%{
+      color: transparent;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
