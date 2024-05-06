@@ -16,6 +16,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
+      - name: Change directory to Portfolio
+        run: cd Portfolio
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
