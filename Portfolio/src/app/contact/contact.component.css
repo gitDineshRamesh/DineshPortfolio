@@ -40,7 +40,7 @@
   aspect-ratio: 1/1;
   transform-origin: center;
   background: linear-gradient(to bottom, transparent, transparent, #66e0ff, #66e0ff, #e366ff, #e366ff, transparent, transparent), linear-gradient(to left, transparent, transparent, #66e0ff, #66e0ff, #e366ff, #e366ff, transparent, transparent);
-  /* animation: rotate 5s infinite linear; */
+  
 }
 
 .card-content::after {
@@ -66,122 +66,5 @@
   font-size: 1.2em;
 }
 
-.title {
-  width: 100%;
-  height: 100%;
-  text-align: right;
-  position: relative;
-  z-index: 2;
-  color: hsl(192, 100%, 88%);
-  font-size: 1em;
-  transition: all ease-in-out 2s linear;
-}
 
-.card-body {
-  padding-block: 1.5em;
-  padding-inline: 1em;
-  z-index: 80;
-  display: flex;
-  gap: 1.5em;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
 
-.svg-card {
-  text-decoration: none;
-  color: hsl(192, 100%, 88%);
-  background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
-  fill: currentColor;
-  width: 2em;
-  aspect-ratio: 1/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.svg-card .face {
-  width: 0.7em;
-}
-
-.svg-card .twit {
-  width: 1em;
-}
-
-.svg-card .insta {
-  width: 1em;
-}
-
-.svg-card .whats {
-  width: 1.1em;
-}
-
-.svg-card:hover {
-  cursor: pointer;
-  color: hsl(192, 100%, 100%);
-}
-
-.card-footer {
-  padding-inline: 0.1em;
-}
-.ftitle{
-    width: 40%;
-    height: 40%;
-    text-align: right;
-    position: relative;
-    z-index: 2;
-    color: hsl(192, 100%, 88%);
-    font-size: 0.6em;
-}
-
-@keyframes backglitch {
-  0% {
-    box-shadow: inset 0px 20px 30px 40px hsl(296, 59%, 10%);
-  }
-
-  50% {
-    box-shadow: inset 0px -20px 30px 40px hsl(296, 59%, 10.2%);
-  }
-
-  to {
-    box-shadow: inset 0px 20px 30px 40px hsl(296, 59%, 10%);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg) translate(-50%, 20%);
-  }
-
-  50% {
-    transform: rotate(180deg) translate(40%, 10%);
-  }
-
-  to {
-    transform: rotate(360deg) translate(-50%, 20%);
-  }
-}
-
-@keyframes blinkShadowsFilter {
-  0% {
-    filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
-  }
-
-  25% {
-    filter: drop-shadow(46px -36px 24px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 24px #9e30a9);
-  }
-
-  50% {
-    filter: drop-shadow(46px 36px 30px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 30px rgba(159, 48, 169, 0.2941176471));
-  }
-
-  75% {
-    filter: drop-shadow(20px -18px 25px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-20px 20px 25px rgba(159, 48, 169, 0.2941176471));
-  }
-
-  to {
-    filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
-  }
-}/*# sourceMappingURL=style.css.map */
