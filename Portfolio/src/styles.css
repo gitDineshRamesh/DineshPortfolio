@@ -1,4 +1,8 @@
-body{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+:root{
     --bgcolor:#002029;
     --borderColor: #00303D;
     --text-color: white;
@@ -14,8 +18,12 @@ body{
 --fontfamh:'IBM Plex Sans Condensed', sans-serif;
 --fontfamp: 'IBM Plex Sans', sans-serif; 
 
-    width: 100%;
-    height: 100dvh;
+}
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     padding: 0%;
     margin: 0%;
     background-image: url("./assets/imgs/nature.jpg");
@@ -27,4 +35,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: soft-light;
+}
+.appRootContainer{
+    max-width: 100vw;
+    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0%;
+    margin: 0%;
 }

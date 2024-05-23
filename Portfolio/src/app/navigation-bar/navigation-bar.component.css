@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center; 
     width: 50%; /* Adjust image width as needed */
-    flex:1; /* Adjust image height as needed */
+    flex-basis:1; /* Adjust image height as needed */
      border-radius: 50%; 
     overflow: hidden;
   }
@@ -25,12 +25,12 @@
   }
   
   .nav-main .hrul {
-    flex:0.5;
+    flex-basis:0.5;
     border: 2px solid var(--secondary); /* Adjusted border style for clarity */
   }
 
   .nav-main .menu-iems{
-    flex: 2.5;
+    flex-basis: 2.5;
   }
   .nav-main .menu-iems .ul {
     display: flex;
@@ -45,6 +45,7 @@
     padding: 0.5rem 1rem;
     background-color: transparent;
     color: var(--color);
+    font-size: 2cqw !important;
     font-family: var(--fontfamh);
     font-weight: bolder;
     text-transform: uppercase;

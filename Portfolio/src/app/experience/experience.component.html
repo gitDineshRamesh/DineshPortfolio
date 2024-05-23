@@ -1,23 +1,5 @@
-<div class="parent">
-  <div class="expmain">
-    <div class="card"  *ngFor="let exp of experienceDetails" [attr.data-name]="exp.header">
-   <div class="content">
-     <div class="back">
-       <div class="back-content">
-         <strong>{{exp.header}}</strong>
-       </div>
-     </div>
-     <div class="front">
-       <div class="front-content">
-         <div class="description">
-           <p *ngFor="let det of exp.details.split('*')">
-             {{det}}
-           </p>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
- </div>
- 
+<div class="main !max-w-10/12 !max-h-[70vh] flex content-center justify-between place-self-center">
+  <div class="flex justify-center ">
+    <app-cards class="basis-[33.33%] " *ngFor="let exp of experienceDetails" [Title]="exp.header" [details]="exp.details"></app-cards>
+  </div>
 </div>

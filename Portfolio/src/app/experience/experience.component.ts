@@ -1,10 +1,11 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { UtilsModule } from '../utils/utils.module';
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor,UtilsModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
