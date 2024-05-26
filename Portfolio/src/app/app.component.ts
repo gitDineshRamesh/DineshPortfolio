@@ -20,11 +20,5 @@ import { ContactComponent } from "./contact/contact.component";
        SkillsComponent, ContactComponent, NgIf]
 })
 export class AppComponent {
-
-  ActiveComponent: string = "Home";
-onNavigate(compName: string) {
-  console.log(`compName=${compName.toLowerCase().replace(" ","")}`);
-  this.ActiveComponent = compName;
-}
   title = 'Portfolio';
 }

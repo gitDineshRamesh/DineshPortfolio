@@ -10,26 +10,26 @@
     <div class="hrul"></div>
     <div class="menu-iems">
         <div class="ul" (click)="changeActive($event)">
-            <div class="li {{initial}}" >
+            <div routerLink="dashboard" class="li {{initial}}" >
                 <span class="text">Home</span>
                 
             </div>
-            <div class="li" >
+            <div class="li" routerLink="summary" >
                 <span class="text">Profile Summary</span>
                 
                 
             </div>
-            <div class="li" >
+            <div class="li" routerLink="experience">
                 <span class="text">Work Experience</span>
                 
                 
             </div>
-            <div class="li" >
+            <div class="li" routerLink="skills" >
                 <span class="text">Skills</span>
                 
                 
             </div>
-            <div class="li" >
+            <div class="li" routerLink="contact" >
                 <span class="text">Contact</span>
                 
             </div>

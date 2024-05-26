@@ -1,16 +1,15 @@
 import { Component, OnInit, ElementRef, Output, EventEmitter, viewChild, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-bar',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './navigation-bar.component.html',
   styleUrl: './navigation-bar.component.css'
 })
 export class NavigationBarComponent {
-
-@Output() navigateTo: EventEmitter<string> = new EventEmitter<string>();
   componentToNavigate: string = ""
   initial = "";
 binding: any;
@@ -41,7 +40,6 @@ binding: any;
       }
       console.log(compName);
       this.initial = "";
-      this.navigateTo.emit(compName);
     }
   }
   
