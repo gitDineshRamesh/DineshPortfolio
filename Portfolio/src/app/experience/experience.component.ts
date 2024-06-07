@@ -18,10 +18,10 @@ experienceDetails: any[]=[
     exceptional interpersonal skills, fostering positive relationships with customers, managers, and end-users alike. *
     Contributed to highly complex projects, collaborating with cross-functional teams to ensure success.`
   },
-  {
-    header:"Spring Boot Developer",
-    details:`Pratishthan Software Venture January 2024 - Present, Bangalore, India.* Demonstrated expertise in Spring Boot, Maven, JPA, Hibernate, Docker, Github, Jfrog, Kafka, Jenkins and Kubernets for  successfully troubleshooting issues, creating Test cases with JUnit and Cucumber and Version Control with Git.`
-  },
+  // {
+  //   header:"Spring Boot Developer",
+  //   details:`Pratishthan Software Venture January 2024 - Present, Bangalore, India.* Demonstrated expertise in Spring Boot, Maven, JPA, Hibernate, Docker, Github, Jfrog, Kafka, Jenkins and Kubernets for  successfully troubleshooting issues, creating Test cases with JUnit and Cucumber and Version Control with Git.`
+  // },
   {
     header:"ML Intership",
     details:`Techvolt Software Pvt Ltd. March 2022 - May 2022, Coimbatore, India.* It was a good experience as an intern at Techvolt. Received certiﬁcation for completing machine learning.`

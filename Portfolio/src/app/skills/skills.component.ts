@@ -11,19 +11,20 @@ import { Component } from '@angular/core';
 export class SkillsComponent{
 skillList: any[]=[
   {skill:"HTML",level:"80%"},
-  {skill:"CSS",level:"65%"},
-  {skill:"JavaScript",level:"70%"},
+  {skill:"CSS",level:"80%"},
+  {skill:"JavaScript",level:"80%"},
+  {skill:"TypeScript",level:"70%"},
   {skill:"Jquery",level:"70%"},
   {skill:"Angular",level:"75%"},
-  {skill:"React",level:"50%"},
-  {skill:"Dot Net & C#",level:"80%"},
-  {skill:"Spring Boot & Java",level:"50%"},
-  {skill:"SQL Server",level:"80%"},
-  {skill:"Docker",level:"50%"},
-  {skill:"GitHub VCS & CI/CD",level:"65%"},
-  {skill:"RPA UiPath",level:"80%"},
-  {skill:"Machine Learning & AI Python",level:"65%"},
-  {skill:"Kafka, Jenkins & Kubernets ",level:"30%"}
+  // {skill:"React",level:"50%"},
+  {skill:"Dot Net & C#",level:"75%"},
+  // {skill:"Spring Boot & Java",level:"50%"},
+  {skill:"SQL Server",level:"75%"},
+  {skill:"Docker",level:"60%"},
+  {skill:"Git & SVN",level:"70%"},
+  // {skill:"RPA UiPath",level:"80%"},
+  {skill:"Machine Learning",level:"65%"},
+  // {skill:"Kafka, Jenkins & Kubernets ",level:"30%"}
 ];
 
 }
